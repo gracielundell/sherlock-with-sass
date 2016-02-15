@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  margin: 5% 5% 5% 5%;
+  margin: 5% 2% 5% 2%;
   overflow: auto;
 
 }
@@ -156,8 +156,36 @@ ul li, a {
   }
   .leftSidebar {
     float: none;
+    width: 100%;
   }
+
+  .leftSidebar hr {
+    display: none;
+  }
+  .leftSidebar li {
+    float: left;
+    width: 31%;
+    border-bottom: 1px solid gray;
+    margin: 1%;
+  }
+  .bottomWord {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+
+  .leftSidebar img {
+    position: absolute;
+    margin: 0 auto;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+
   .mainColumn {
+    margin-top: 25%;
     float: none;
+    width: 100%;
   }
 }
