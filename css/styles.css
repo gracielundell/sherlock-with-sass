@@ -65,10 +65,11 @@ body {
 
 .leftSidebar img {
   display: block;
+  padding-left: 5%;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 90%;
+  width: 100%;
 }
 
 ul li, a {
@@ -81,6 +82,10 @@ ul li, a {
 
 .leftSidebar ul a:hover {
   color: red;
+}
+
+.leftSidebar .logo2 {
+  display: none;
 }
 
 
@@ -151,9 +156,16 @@ ul li, a {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 900px) {
-  .leftSidebar .hide {
+  .leftSidebar .logo {
     display: none;
   }
+
+  .leftSidebar #logo2 {
+    display: block;
+    margin-top: 5%;
+    width: 65%;
+  }
+
   .leftSidebar {
     float: none;
     width: 100%;
@@ -174,18 +186,15 @@ ul li, a {
     letter-spacing: 0;
   }
 
-  .leftSidebar img {
-    position: absolute;
-    margin: 0 auto;
-    top: 13%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-
 
   .mainColumn {
-    margin-top: 25%;
     float: none;
     width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .mainColumn h1 {
+    font-size: 2.3em;
+    margin-top: 0;
   }
 }
