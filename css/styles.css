@@ -7,14 +7,19 @@
             box-sizing: border-box;
 }
 
+@font-face {
+    font-family:
+}
 
 body {
   margin: 0 auto;
   background-color: #E7E7E7;
+  text-shadow: 1px 1px white;
 }
 
 .container {
   margin: 5% 5% 5% 5%;
+  overflow: auto;
 
 }
 
@@ -22,12 +27,29 @@ body {
   background-image: url("../img/headerImage.png");
   background-repeat: repeat-x;
   height: 20px;
-  width: 100%;
   margin-bottom: 2%;
 }
 
 .container {
-  border: 2px solid green;
+  margin-top: 0;
+}
+
+.topWord {
+  color: #880000;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.bottomWord {
+  color: #880000;
+  font-size: 25px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.container a:hover {
+  color: red;
 }
 
 
@@ -35,10 +57,10 @@ body {
 
 
 .leftSidebar {
-  border: 1px solid red;
   float: left;
   width: 30%;
-  padding: 3%;
+  padding: 1.5%;
+  margin-top: 0;
 }
 
 .leftSidebar img {
@@ -46,14 +68,15 @@ body {
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 ul li, a {
   list-style-type: none;
-  color: #660000;
+  color: #880000;
   text-decoration: none;
   text-align: center;
+
 }
 
 .leftSidebar ul a:hover {
@@ -65,16 +88,64 @@ ul li, a {
 
 
 .mainColumn {
-  border: 1px solid blue;
   float: left;
   width: 70%;
   padding: 3%;
+  margin: 0 auto;
+  margin-top: 8%;
 }
 
-.mainColumn img {
-  border-radius: 5px;
+.mainColumn .heading {
+  display: inline-block;
+  width: 32%;
+}
+
+.mainColumn .heading .word {
+  width: 10%;
+}
+
+.mainColumn .img {
   float: left;
   margin: 1%;
+  max-width: 29%;
+  margin-left: 2%;
+}
+
+.img p {
+  margin: 0;
+  padding: 0;
+}
+
+.mainColumn .img img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #888888;
+  max-width: 100%;
+}
+
+.mainColumn .description {
+  font-size: 1.5em;
+}
+
+.mainColumn h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.mainColumn .imageGallery {
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+/*FOOTER ----------------*/
+
+.victorsFooter {
+  text-align: center;
+}
+
+.victorsFooter p {
+  font-size: 1.2em;
 }
 
 /* MEDIA QUERIES */
@@ -82,5 +153,11 @@ ul li, a {
 @media screen and (max-width: 900px) {
   .leftSidebar .hide {
     display: none;
+  }
+  .leftSidebar {
+    float: none;
+  }
+  .mainColumn {
+    float: none;
   }
 }
