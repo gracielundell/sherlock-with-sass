@@ -25,8 +25,8 @@ body {
 
 .pageTop {
   background-image: url("../img/headerImage.png");
-  background-repeat: repeat-x;
-  height: 20px;
+  /*background-repeat: repeat-x;*/
+  height: 40px;
   margin-bottom: 2%;
 }
 
@@ -41,6 +41,14 @@ body {
 }
 
 .bottomWord {
+  color: #880000;
+  font-size: 22px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.bottomWord2 {
   color: #880000;
   font-size: 22px;
   margin-top: 0;
@@ -133,6 +141,10 @@ body {
   font-weight: lighter;
 }
 
+.mainColumn h2 {
+  font-weight: lighter;
+}
+
 .mainColumn .imageGallery {
   text-align: center;
   font-size: 1.5em;
@@ -211,5 +223,24 @@ body {
     width: 31%;
     border-bottom: 1px solid gray;
     margin: 1%;
+  }
+  .mainColumn .img {
+    max-width: 13%;
+  }
+
+  .mainColumn {
+    padding-top: 0;
+  }
+
+  .victorsFooter {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainColumn .img {
+    max-width: 46%;
   }
 }
