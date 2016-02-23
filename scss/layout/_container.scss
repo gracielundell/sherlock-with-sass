@@ -1,0 +1,13 @@
+.container {
+  margin: 0 1% 5% 1%;
+  overflow: auto;
+  a {
+    list-style-type: none;
+    color: #880000;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+      color: red;
+    }
+  }
+}

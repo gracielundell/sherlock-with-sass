@@ -1,0 +1,97 @@
+/* MAIN COLUMN ------------------*/
+
+.mainColumn {
+  float: left;
+  width: 70%;
+  padding: 3%;
+  margin: 0 auto;
+  margin-top: 8%;
+  .heading {
+    display: inline-block;
+    width: 32%;
+    .word {
+      width: 10%;
+    }
+  }
+  .img {
+    float: left;
+    margin: 1%;
+    max-width: 29%;
+    margin-left: 2%;
+    img {
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px #888888;
+      max-width: 100%;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .description {
+    font-size: 1.5em;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+  }
+  h2 {
+    font-weight: lighter;
+  }
+  .imageGallery {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+}
+
+/* LEFT SIDEBAR ----------------*/
+
+.leftSidebar {
+  float: left;
+  width: 30%;
+  padding: 1.5%;
+  margin-top: 0;
+  img {
+    display: block;
+    padding-left: 5%;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.nav .logo2 {
+  display: none;
+}
+
+.pageTop {
+  background-image: url("../img/headerImage.png");
+  /*background-repeat: repeat-x;*/
+  height: 40px;
+  margin-bottom: 2%;
+}
+
+.topWord {
+  color: #880000;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.bottomWord {
+  color: #880000;
+  font-size: 22px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.bottomWord2 {
+  color: #880000;
+  font-size: 22px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
