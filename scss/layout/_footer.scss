@@ -1,6 +1,11 @@
 .victorsFooter {
-  text-align: center;
+  @extend %center-align;
   p {
     font-size: 1.2em;
+  }
+  @media #{$brk-large} {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
   }
 }

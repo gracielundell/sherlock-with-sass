@@ -2,12 +2,12 @@
   margin: 0 1% 5% 1%;
   overflow: auto;
   a {
+    @extend %center-align;
     list-style-type: none;
-    color: #880000;
+    color: $maroon;
     text-decoration: none;
-    text-align: center;
     &:hover {
-      color: red;
+      color: $red;
     }
   }
 }
