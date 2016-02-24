@@ -16,6 +16,9 @@
     float: left;
     margin: 1% 1% 1% 2%;
     max-width: 29%;
+    // a:hover {
+    //   color: red;
+    // }
     @media #{$brk-small} {
       max-width: 46%;
     }
